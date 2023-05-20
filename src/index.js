@@ -1,5 +1,4 @@
 import select, { Separator } from "@inquirer/select";
-import ScriptRunnerUtils from "./utils/script-runner.js";
 import runFirefoxEpicGames from "./scripts/firefox-epic-games.js";
 
 const ScriptGroups = Object.freeze({
