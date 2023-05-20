@@ -30,4 +30,6 @@ Run _npm run start_ on the terminal and select the option that best suits you.
 
 ## Credits
 
-Image: <a target="_blank" href="https://icons8.com/icon/hAPVXSp7TpSM/morty-smith">Morty Smith</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://emojicombos.com/morty">Morty Smith</a> ASCII by <a target="_blank" href="https://emojicombos.com/">Emoji Combos</a>
+
+<a target="_blank" href="https://icons8.com/icon/hAPVXSp7TpSM/morty-smith">Morty Smith</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
