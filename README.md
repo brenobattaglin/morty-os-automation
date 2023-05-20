@@ -1,6 +1,10 @@
 # morty-os-automation
 
-![](src/assets/morty.png)
+<div align="center">
+    <img alt="Morty's face, bored" src="src/assets/morty.png">
+</div>
+
+Morty's here to help me on my daily routine by doing repetitive tasks I do everyday. Thanks Morty.
 
 ## macOS
 
@@ -14,6 +18,15 @@ Also, add the application you're running the script from.
             Settings -> Security & Privacy -> Privacy tab -> Accessibility -> Add...
 
 For example, if you want to execute your node script in e.g. iTerm2, you'd have to add iTerm.app to the list.
+
+## Setup
+
+1. Run **npm i**.
+2. Make sure you're logged in on (these urls)[https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js] so the scripts can work properly.
+
+## How to use
+
+Run \*_npm run start_ on the terminal and select the option that best suits you.
 
 ## Credits
 
