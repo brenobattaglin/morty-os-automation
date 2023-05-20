@@ -1,14 +1,15 @@
-const { keyboard, Key, sleep, mouse, screen } = require("@nut-tree/nut-js");
+import { keyboard, Key, sleep, mouse, screen } from "@nut-tree/nut-js";
+import KeyboardUtils from "../utils/keyboard-utils.js";
 
-const superKey =
-  process.platform === "darwin" ? Key.LeftSuper : Key.LeftControl;
+export default async function runFirefoxEpicGames() {
+  const superKey =
+    process.platform === "darwin" ? Key.LeftSuper : Key.LeftControl;
 
-(async () => {
   await keyboard.type(superKey, Key.Space);
   await keyboard.type("firefox");
   await keyboard.type(Key.Enter);
 
-  await pressEnter();
+  await KeyboardUtils.pressEnter();
 
   await keyboard.type(superKey, Key.T);
   await keyboard.type("https://store.epicgames.com/en-US/");
@@ -18,11 +19,4 @@ const superKey =
   await keyboard.pressKey(superKey, Key.F);
   await keyboard.releaseKey(superKey, Key.F);
   await keyboard.type("Free now");
-
-  await pressEnter();
-})();
-
-async function pressEnter() {
-  await keyboard.pressKey(Key.Enter);
-  await keyboard.releaseKey(Key.Enter);
 }
