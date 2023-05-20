@@ -50,6 +50,5 @@ switch (answer) {
     await runFirefoxPrimeGaming();
     break;
   default:
-    ScriptRunnerUtils.runScript("scripts/firefox-epic-games");
     break;
 }
