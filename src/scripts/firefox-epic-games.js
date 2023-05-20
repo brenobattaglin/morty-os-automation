@@ -11,7 +11,7 @@ export default async function runFirefoxEpicGames() {
 
   await KeyboardUtils.pressEnter();
 
-  await BrowserUtils.openNewTab();
+  await BrowserUtils.openNewTab(superKey);
   await keyboard.type("https://store.epicgames.com/en-US/");
   await keyboard.type(Key.Enter);
 
