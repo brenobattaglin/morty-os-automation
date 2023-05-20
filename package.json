@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Browser tasks automator",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brenobattaglin/neo-browser-automator.git"
@@ -18,7 +24,7 @@
   },
   "homepage": "https://github.com/brenobattaglin/neo-browser-automator#readme",
   "dependencies": {
-    "@nut-tree/nut-js": "^3.1.1",
-    "typescript": "^5.0.4"
+    "@inquirer/prompts": "^1.2.0",
+    "@nut-tree/nut-js": "^3.1.1"
   }
 }
