@@ -22,11 +22,11 @@ For example, if you want to execute your node script in e.g. iTerm2, you'd have 
 ## Setup
 
 1. Run **npm i**.
-2. Make sure you're logged in on (these urls)[https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js] so the scripts can work properly.
+2. Make sure you're logged in on [these urls](https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js) so the scripts can work properly.
 
 ## How to use
 
-Run \*_npm run start_ on the terminal and select the option that best suits you.
+Run _npm run start_ on the terminal and select the option that best suits you.
 
 ## Credits
 
