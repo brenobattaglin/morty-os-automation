@@ -6,9 +6,9 @@ import MacosHelper from "../helpers/macos.js";
 export default async function runFirefoxEpicGames() {
   MacosHelper.openSpotlight();
   await keyboard.type("firefox");
-  await keyboard.type(Key.Enter);
-
   await KeyboardUtils.pressEnter();
+
+  const superKey = await KeyboardUtils.getSuperKey();
 
   await BrowserUtils.openNewTab(superKey);
   await keyboard.type("https://store.epicgames.com/en-US/");
