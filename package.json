@@ -1,0 +1,24 @@
+{
+  "name": "neo-os-automator",
+  "version": "1.0.0",
+  "description": "Browser tasks automator",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenobattaglin/neo-browser-automator.git"
+  },
+  "keywords": [
+    "automator"
+  ],
+  "author": "Breno Battaglin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenobattaglin/neo-browser-automator/issues"
+  },
+  "homepage": "https://github.com/brenobattaglin/neo-browser-automator#readme",
+  "dependencies": {
+    "@nut-tree/nut-js": "^3.1.1",
+    "typescript": "^5.0.4"
+  }
+}
