@@ -3,6 +3,7 @@ import KeyboardUtils from "../utils/keyboard-utils.js";
 import BrowserUtils from "../utils/browser-utils.js";
 import MacosHelper from "../helpers/macos.js";
 import SoftwareNameConstants from "../constants/software.js";
+import UrlConstants from "../constants/url.js";
 
 export default async function runFirefoxEpicGames() {
   MacosHelper.openSpotlight();
@@ -12,7 +13,7 @@ export default async function runFirefoxEpicGames() {
   const superKey = await KeyboardUtils.getSuperKey();
 
   await BrowserUtils.openNewTab(superKey);
-  await keyboard.type("https://store.epicgames.com/en-US/");
+  await keyboard.type(UrlConstants.EPIC_GAMES);
   await keyboard.type(Key.Enter);
 
   await sleep(5000);
