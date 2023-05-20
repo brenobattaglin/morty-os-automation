@@ -11,6 +11,7 @@ const ScriptKeys = Object.freeze({
   FIREFOX_FREE_GAMES: "firefox-free-games",
 });
 
+const title = "------MORTY OS AUTOMATION------\n";
 const mortyAscii =
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
   "⠀⠀⠀⠀⠀⢀⡠⠐⠁⠀⠀⠀⠀⠀⠀⠑⠠⡀⠀⠀⠀⠀⠀\n" +
@@ -25,6 +26,7 @@ const mortyAscii =
   "⠀⠀⠀⠁⠚⠢⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠈⠁⠀⢀⠊⠀\n" +
   "⠀⠀⠀⠀⠀⠀⠈⠢⢀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠔⠁⠀⠀\n" +
   "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠒⠒⠒⠂⠀⠉⠀⠀⠀⠀⠀⠀";
+console.log(title);
 console.log(mortyAscii);
 
 const answer = await select({
