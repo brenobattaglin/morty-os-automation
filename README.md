@@ -28,6 +28,9 @@ For example, if you want to execute your node script in e.g. iTerm2, you'd have 
 
 Run _npm run start_ on the terminal and select the option that best suits you.
 
+![image](https://github.com/brenobattaglin/morty-os-automation/assets/8771994/c643bbdc-4176-4880-bf2d-ec285b68b01f)
+
+
 ## Credits
 
 <a target="_blank" href="https://emojicombos.com/morty">Morty Smith</a> ASCII by <a target="_blank" href="https://emojicombos.com/">Emoji Combos</a>
