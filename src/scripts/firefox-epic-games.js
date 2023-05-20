@@ -1,11 +1,10 @@
 import { keyboard, Key, sleep, mouse, screen } from "@nut-tree/nut-js";
 import KeyboardUtils from "../utils/keyboard-utils.js";
+import BrowserUtils from "../utils/browser-utils.js";
+import MacosHelper from "../helpers/macos.js";
 
 export default async function runFirefoxEpicGames() {
-  const superKey =
-    process.platform === "darwin" ? Key.LeftSuper : Key.LeftControl;
-
-  await keyboard.type(superKey, Key.Space);
+  MacosHelper.openSpotlight();
   await keyboard.type("firefox");
   await keyboard.type(Key.Enter);
 
