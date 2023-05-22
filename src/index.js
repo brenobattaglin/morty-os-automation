@@ -14,9 +14,11 @@ class ScriptNames {
   static OBSIDIAN_WEEKLY_NOTES = "Create weekly notes";
 }
 
-const ScriptKeys = Object.freeze({
-  FIREFOX_FREE_GAMES: "firefox-free-games",
-});
+class ScriptKeys {
+  static FIREFOX_FREE_GAMES = "firefox-free-games";
+  static OBSIDIAN_DAILY_NOTES = "obsidian-daily-notes";
+  static OBSIDIAN_WEEKLY_NOTES = "obsidian-weekly-notes";
+}
 
 const title = "------MORTY OS AUTOMATION------\n";
 const mortyAscii =
@@ -46,6 +48,17 @@ const answer = await select({
       description: "Open Epic Games' and Amazon Prime's free games sections",
     },
     new Separator(),
+    ScriptGroupHelper.createGroup(ScriptGroups.OBSIDIAN),
+    {
+      name: ScriptNames.OBSIDIAN_DAILY_NOTES,
+      value: ScriptKeys.OBSIDIAN_DAILY_NOTES,
+      description: "Create daily note",
+    },
+    {
+      name: ScriptNames.OBSIDIAN_WEEKLY_NOTES,
+      value: ScriptKeys.OBSIDIAN_WEEKLY_NOTES,
+      description: "Create weekly note",
+    },
   ],
 });
 
