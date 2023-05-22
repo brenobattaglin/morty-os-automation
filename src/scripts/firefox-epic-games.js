@@ -11,7 +11,7 @@ export default async function runFirefoxEpicGames() {
   const superKey = await KeyboardUtils.getSuperKey();
   await BrowserUtils.openNewTab(superKey, UrlConstants.EPIC_GAMES);
 
-  await sleep(5000);
+  await sleep(10000);
   await keyboard.pressKey(superKey, Key.F);
   await keyboard.releaseKey(superKey, Key.F);
   await keyboard.type("Free now");
