@@ -70,8 +70,10 @@ switch (answer) {
     break;
   case ScriptKeys.OBSIDIAN_DAILY_NOTE:
     await runObsidianDailyNote();
+    break;
   case ScriptKeys.OBSIDIAN_WEEKLY_NOTE:
     await runObsidianWeeklyNote();
+    break;
   default:
     break;
 }

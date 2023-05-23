@@ -7,6 +7,8 @@ import ObsidianUtils from "../utils/obsidian.js";
 export default async function runObsidianWeeklyNote() {
   await MacosUtils.openApplication(SoftwareNameConstants.OBSIDIAN);
   const superKey = await KeyboardUtils.getSuperKey();
+
+  await sleep(7000);
   await ObsidianUtils.runCommand(
     superKey,
     ObsidianCommandsConstants.WEEKLY_NOTE
