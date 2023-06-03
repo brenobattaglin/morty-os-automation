@@ -1,5 +1,5 @@
 import { sleep } from "@nut-tree/nut-js";
-import ObsidianCommandsConstants from "../constants/obsidian-commands.js";
+import ObsidianCommandsConstants from "../constants/obsidian.js";
 import SoftwareNameConstants from "../constants/software-names.js";
 import KeyboardUtils from "../utils/keyboard-utils.js";
 import MacosUtils from "../utils/macos.js";
