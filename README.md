@@ -19,10 +19,18 @@ Also, add the application you're running the script from.
 
 For example, if you want to execute your node script in e.g. iTerm2, you'd have to add iTerm.app to the list.
 
+## Requisites
+This project is really personal. So if you want to run everything properly, here it goes:
+
+1. Install node.js version >= 14
+2. Make sure you're logged in on [these urls](https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js) so the scripts can work properly.
+3. Make sure you have [there softwares](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/software-names.js) installed.
+4. Install [these plugins](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/obsidian-commands.js) on Obsidian and make sure they are working via command pallete.
+
+
 ## Setup
 
 1. Run **npm i**.
-2. Make sure you're logged in on [these urls](https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js) so the scripts can work properly.
 
 ## How to use
 
