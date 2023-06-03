@@ -6,7 +6,7 @@ export default class MacosUtils {
     await keyboard.type(Key.LeftSuper, Key.Space);
   }
 
-  static async openApplication(appName) {
+  static async openApplication(appName: string) {
     this.openSpotlight();
     await keyboard.type(appName);
     await KeyboardUtils.pressEnter();

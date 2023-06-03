@@ -1,5 +1,5 @@
 export default class ScriptGroupHelper {
-  static createGroup(name) {
+  static createGroup(name: string) {
     return {
       name: name,
       value: "",
