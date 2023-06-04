@@ -10,6 +10,7 @@ import {
   ScriptKeys,
   ScriptNames,
 } from "./constants/scripts.js";
+import runObsidianAddMovie from "./scripts/obsidian-add-movie.js";
 
 class ConsoleApplication {
   async run() {
@@ -56,6 +57,11 @@ class ConsoleApplication {
         new Separator(),
         ConsoleGroupHelper.getGroup(ScriptGroups.OBSIDIAN),
         ConsoleScriptHelper.getEntry(
+          ScriptNames.OBSIDIAN_ADD_MOVIE,
+          ScriptKeys.OBSIDIAN_ADD_MOVIE,
+          ScriptDescriptions.OBSIDIAN_ADD_MOVIE
+        ),
+        ConsoleScriptHelper.getEntry(
           ScriptNames.OBSIDIAN_DAILY_NOTE,
           ScriptKeys.OBSIDIAN_DAILY_NOTE,
           ScriptDescriptions.OBSIDIAN_DAILY_NOTE
@@ -74,6 +80,9 @@ class ConsoleApplication {
       case ScriptKeys.FIREFOX_FREE_GAMES:
         await runFirefoxEpicGames();
         await runFirefoxPrimeGaming();
+        break;
+      case ScriptKeys.OBSIDIAN_ADD_MOVIE:
+        await runObsidianAddMovie();
         break;
       case ScriptKeys.OBSIDIAN_DAILY_NOTE:
         await runObsidianDailyNote();
