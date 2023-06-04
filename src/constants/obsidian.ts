@@ -6,4 +6,5 @@ export class ObsidianCommands {
 
 export class ObsidianCustomCommands {
   static QUICK_ADD_ADD_MOVIE = "Add Movie";
+  static QUICK_ADD_ADD_TV_SHOW = "Add Show";
 }

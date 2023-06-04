@@ -11,6 +11,7 @@ import {
   ScriptNames,
 } from "./constants/scripts.js";
 import runObsidianAddMovie from "./scripts/obsidian-add-movie.js";
+import runObsidianAddTvShow from "./scripts/obsidian-add-tv-show.js";
 
 class ConsoleApplication {
   async run() {
@@ -47,6 +48,7 @@ class ConsoleApplication {
   private async showScriptGroups() {
     return select({
       message: "Select the action",
+      pageSize: 10,
       choices: [
         ConsoleGroupHelper.getGroup(ScriptGroups.FIREFOX),
         ConsoleScriptHelper.getEntry(
@@ -60,6 +62,11 @@ class ConsoleApplication {
           ScriptNames.OBSIDIAN_ADD_MOVIE,
           ScriptKeys.OBSIDIAN_ADD_MOVIE,
           ScriptDescriptions.OBSIDIAN_ADD_MOVIE
+        ),
+        ConsoleScriptHelper.getEntry(
+          ScriptNames.OBSIDIAN_ADD_TV_SHOW,
+          ScriptKeys.OBSIDIAN_ADD_TV_SHOW,
+          ScriptDescriptions.OBSIDIAN_ADD_TV_SHOW
         ),
         ConsoleScriptHelper.getEntry(
           ScriptNames.OBSIDIAN_DAILY_NOTE,
@@ -83,6 +90,9 @@ class ConsoleApplication {
         break;
       case ScriptKeys.OBSIDIAN_ADD_MOVIE:
         await runObsidianAddMovie();
+        break;
+      case ScriptKeys.OBSIDIAN_ADD_TV_SHOW:
+        await runObsidianAddTvShow();
         break;
       case ScriptKeys.OBSIDIAN_DAILY_NOTE:
         await runObsidianDailyNote();

@@ -8,6 +8,7 @@ export class ScriptNames {
   static OBSIDIAN_DAILY_NOTE = "Open daily note";
   static OBSIDIAN_WEEKLY_NOTE = "Open weekly note";
   static OBSIDIAN_ADD_MOVIE = "Tracker: Add movie";
+  static OBSIDIAN_ADD_TV_SHOW = "Tracker: Add TV show";
 }
 
 export class ScriptDescriptions {
@@ -16,6 +17,7 @@ export class ScriptDescriptions {
   static OBSIDIAN_DAILY_NOTE = "Open daily note";
   static OBSIDIAN_WEEKLY_NOTE = "Open weekly note";
   static OBSIDIAN_ADD_MOVIE = "Add movie to your watchlist";
+  static OBSIDIAN_ADD_TV_SHOW = "Add TV show to your watchlist";
 }
 
 export class ScriptKeys {
@@ -23,4 +25,5 @@ export class ScriptKeys {
   static OBSIDIAN_DAILY_NOTE = "obsidian-daily-note";
   static OBSIDIAN_WEEKLY_NOTE = "obsidian-weekly-notes";
   static OBSIDIAN_ADD_MOVIE = "obsidian-add-movie";
+  static OBSIDIAN_ADD_TV_SHOW = "obsidian-add-tv-show";
 }
