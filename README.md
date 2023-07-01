@@ -36,7 +36,7 @@ This project is really personal. But if you want to run everything properly, her
 
 Run _npm run start_ on the terminal and select the option that best suits you.
 
-![image](https://github.com/brenobattaglin/morty-os-automation/assets/8771994/c643bbdc-4176-4880-bf2d-ec285b68b01f)
+<img width="390" alt="image" src="https://github.com/brenobattaglin/morty-os-automation/assets/8771994/a90179bc-dc0b-40e8-8db9-8933224591ab">
 
 
 ## Credits
