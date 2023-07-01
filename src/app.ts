@@ -12,9 +12,13 @@ import {
 } from "./constants/scripts.js";
 import runObsidianAddMovie from "./scripts/obsidian-add-movie.js";
 import runObsidianAddTvShow from "./scripts/obsidian-add-tv-show.js";
+import runObsidianAddGame from "./scripts/obsidian-add-game.js";
+import { configDotenv } from "dotenv";
 
 class ConsoleApplication {
   async run() {
+    await configDotenv();
+
     await this.printTitle();
     await this.printAscii();
 
@@ -59,6 +63,11 @@ class ConsoleApplication {
         new Separator(),
         ConsoleGroupHelper.getGroup(ScriptGroups.OBSIDIAN),
         ConsoleScriptHelper.getEntry(
+          ScriptNames.OBSIDIAN_ADD_GAME,
+          ScriptKeys.OBSIDIAN_ADD_GAME,
+          ScriptDescriptions.OBSIDIAN_ADD_GAME
+        ),
+        ConsoleScriptHelper.getEntry(
           ScriptNames.OBSIDIAN_ADD_MOVIE,
           ScriptKeys.OBSIDIAN_ADD_MOVIE,
           ScriptDescriptions.OBSIDIAN_ADD_MOVIE
@@ -87,6 +96,9 @@ class ConsoleApplication {
       case ScriptKeys.FIREFOX_FREE_GAMES:
         await runFirefoxEpicGames();
         await runFirefoxPrimeGaming();
+        break;
+      case ScriptKeys.OBSIDIAN_ADD_GAME:
+        await runObsidianAddGame();
         break;
       case ScriptKeys.OBSIDIAN_ADD_MOVIE:
         await runObsidianAddMovie();
