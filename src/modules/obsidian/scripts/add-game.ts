@@ -1,10 +1,10 @@
 import cheerio from "cheerio";
-import { HtmlUtils } from "../utils/html-utils";
-import MacosUtils from "../utils/macos";
-import KeyboardUtils from "../utils/keyboard-utils";
-import BrowserUtils from "../utils/browser-utils";
-import UrlConstants from "../constants/url";
-import SoftwareNameConstants from "../constants/software-names";
+import { HtmlUtils } from "../../../common/utils/html-utils";
+import MacosUtils from "../../../common/utils/macos";
+import KeyboardUtils from "../../../common/utils/keyboard-utils";
+import BrowserUtils from "../../../common/utils/browser-utils";
+import UrlConstants from "../../../common/constants/url";
+import SoftwareNameConstants from "../../../common/constants/software-names";
 import { input } from "@inquirer/prompts";
 import { sleep } from "@nut-tree/nut-js";
 import fs from "fs-extra";

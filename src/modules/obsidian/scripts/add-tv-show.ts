@@ -1,13 +1,13 @@
 import { keyboard, sleep } from "@nut-tree/nut-js";
-import SoftwareNameConstants from "../constants/software-names";
-import KeyboardUtils from "../utils/keyboard-utils";
-import MacosUtils from "../utils/macos";
-import ObsidianUtils from "../utils/obsidian";
 import { input } from "@inquirer/prompts";
+import MacosUtils from "../../../common/utils/macos";
+import SoftwareNameConstants from "../../../common/constants/software-names";
+import KeyboardUtils from "../../../common/utils/keyboard-utils";
+import ObsidianUtils from "../../../common/utils/obsidian";
 import {
   ObsidianCommands,
   ObsidianCustomCommands,
-} from "../constants/obsidian";
+} from "../constants/commands";
 
 export default async function runObsidianAddTvShow() {
   const tvShow = await input({ message: "What's the name of the TV show?" });

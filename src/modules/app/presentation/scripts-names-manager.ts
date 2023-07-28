@@ -1,4 +1,4 @@
-export class ScriptGroups {
+export class ScriptGroupNames {
   static FIREFOX = "Firefox";
   static OBSIDIAN = "Obsidian";
 }
