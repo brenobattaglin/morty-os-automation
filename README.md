@@ -23,20 +23,22 @@ For example, if you want to execute your node script in e.g. iTerm2, you'd have 
 This project is really personal. But if you want to run everything properly, here it goes:
 
 1. Install node.js version >= 14
-2. Make sure you're logged in on [these urls](https://github.com/brenobattaglin/morty-os-automator/blob/main/src/constants/url.js) so the scripts can work properly.
-3. Make sure you have [there softwares](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/software-names.js) installed.
-4. Install [these plugins](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/obsidian-commands.js) on Obsidian and make sure they are working via command pallete.
-
+2. Make sure you're logged in and has accesses to [these urls](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/url.ts) so the scripts can work properly.
+3. Make sure you have [these softwares](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/software-names.ts) installed.
+4. Install [these plugins and commands](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/obsidian.ts) available on Obsidian and make sure they are working via the command pallete.
 
 ## Setup
 
+1. If you want to use the game tracker feature on Obsidian, create a .env file, with the following content:
+
+       OBSIDIAN_GAMES_DB_PATH="<here goes the absolute path to your game tracker folder>"
 1. Run **npm i**.
 
 ## How to use
 
 Run _npm run start_ on the terminal and select the option that best suits you.
 
-![image](https://github.com/brenobattaglin/morty-os-automation/assets/8771994/c643bbdc-4176-4880-bf2d-ec285b68b01f)
+<img width="390" alt="image" src="https://github.com/brenobattaglin/morty-os-automation/assets/8771994/a90179bc-dc0b-40e8-8db9-8933224591ab">
 
 
 ## Credits
