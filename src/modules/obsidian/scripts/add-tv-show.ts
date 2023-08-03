@@ -5,8 +5,8 @@ import {
   ObsidianCustomCommands,
 } from "../constants/commands";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import ObsidianUtils from "../../../core/utils/obsidian";
-import MacosUtils from "../../../core/utils/macos";
+import ObsidianUtils from "../../../core/utils/obsidian-utils";
+import MacosUtils from "../../../core/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 
 export default async function runObsidianAddTvShow() {

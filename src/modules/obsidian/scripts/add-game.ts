@@ -2,12 +2,12 @@ import { input } from "@inquirer/prompts";
 import { sleep } from "@nut-tree/nut-js";
 import cheerio from "cheerio";
 import fs from "fs-extra";
-import SoftwareNameConstants from "../../../core/constants/software-names";
 import UrlConstants from "../../../core/constants/url";
 import BrowserUtils from "../../../core/utils/browser-utils";
 import { HtmlUtils } from "../../../core/utils/html-utils";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import MacosUtils from "../../../core/utils/macos";
+import MacosUtils from "../../../core/utils/macos-utils";
+import SoftwareNameConstants from "../../../core/constants/software-names";
 
 export default async function runObsidianAddGame() {
   const search = await input({ message: "Enter the name of the game" });

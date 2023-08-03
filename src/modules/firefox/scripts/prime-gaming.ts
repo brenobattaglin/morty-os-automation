@@ -1,5 +1,5 @@
 import { Key, keyboard, sleep } from "@nut-tree/nut-js";
-import MacosUtils from "../../../core/utils/macos";
+import MacosUtils from "../../../core/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 import UrlConstants from "../../../core/constants/url";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";

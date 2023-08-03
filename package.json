@@ -2,9 +2,9 @@
   "name": "morty-os-automator",
   "version": "1.0.0",
   "description": "OS task automation",
-  "main": "app.ts",
+  "main": "main.ts",
   "scripts": {
-    "start": "tsc && node dist/app.js"
+    "start": "tsc && node dist/main.js"
   },
   "engines": {
     "node": ">=14"
