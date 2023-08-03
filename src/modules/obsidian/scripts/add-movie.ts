@@ -3,7 +3,7 @@ import { keyboard, sleep } from "@nut-tree/nut-js";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";
 import MacosUtils from "../../../core/utils/macos-utils";
-import ObsidianUtils from "../../../core/utils/obsidian-utils";
+import ObsidianUtils from "../helpers/command-helper";
 import {
   ObsidianCommands,
   ObsidianCustomCommands,

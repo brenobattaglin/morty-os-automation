@@ -5,7 +5,7 @@ import {
   ObsidianCustomCommands,
 } from "../constants/commands";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import ObsidianUtils from "../../../core/utils/obsidian-utils";
+import ObsidianUtils from "../helpers/command-helper";
 import MacosUtils from "../../../core/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 
