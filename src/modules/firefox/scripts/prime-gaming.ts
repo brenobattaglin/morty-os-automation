@@ -1,10 +1,9 @@
 import { Key, keyboard, sleep } from "@nut-tree/nut-js";
-import MacosUtils from "../../../common/utils/macos";
-import SoftwareNameConstants from "../../../common/constants/software-names";
-import KeyboardUtils from "../../../common/utils/keyboard-utils";
-import BrowserUtils from "../../../common/utils/browser-utils";
-import UrlConstants from "../../../common/constants/url";
-
+import MacosUtils from "../../../core/utils/macos";
+import SoftwareNameConstants from "../../../core/constants/software-names";
+import UrlConstants from "../../../core/constants/url";
+import KeyboardUtils from "../../../core/utils/keyboard-utils";
+import BrowserUtils from "../../../core/utils/browser-utils";
 export default async function runFirefoxPrimeGaming() {
   await MacosUtils.openApplication(SoftwareNameConstants.FIREFOX);
 

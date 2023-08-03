@@ -1,8 +1,8 @@
 import { sleep } from "@nut-tree/nut-js";
-import MacosUtils from "../../../common/utils/macos";
-import SoftwareNameConstants from "../../../common/constants/software-names";
-import KeyboardUtils from "../../../common/utils/keyboard-utils";
-import ObsidianUtils from "../../../common/utils/obsidian";
+import SoftwareNameConstants from "../../../core/constants/software-names";
+import KeyboardUtils from "../../../core/utils/keyboard-utils";
+import MacosUtils from "../../../core/utils/macos";
+import ObsidianUtils from "../../../core/utils/obsidian";
 import { ObsidianCommands } from "../constants/commands";
 
 export default async function runObsidianWeeklyNote() {
