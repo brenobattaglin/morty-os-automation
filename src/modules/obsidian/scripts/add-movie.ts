@@ -3,11 +3,10 @@ import { keyboard, sleep } from "@nut-tree/nut-js";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 import KeyboardUtils from "../../../core/utils/keyboard-utils";
 import MacosUtils from "../../../core/utils/macos-utils";
-import ObsidianUtils from "../helpers/command-helper";
-import {
+import ObsidianUtils, {
   ObsidianCommands,
   ObsidianCustomCommands,
-} from "../constants/commands";
+} from "../helpers/command-helper";
 
 export default async function runObsidianAddMovie() {
   const movie = await input({ message: "What's the name of the movie?" });

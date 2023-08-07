@@ -1,11 +1,10 @@
 import { keyboard, sleep } from "@nut-tree/nut-js";
 import { input } from "@inquirer/prompts";
-import {
+import KeyboardUtils from "../../../core/utils/keyboard-utils";
+import ObsidianUtils, {
   ObsidianCommands,
   ObsidianCustomCommands,
-} from "../constants/commands";
-import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import ObsidianUtils from "../helpers/command-helper";
+} from "../helpers/command-helper";
 import MacosUtils from "../../../core/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 
