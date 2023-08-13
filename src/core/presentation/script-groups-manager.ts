@@ -24,6 +24,21 @@ class ScriptGroups {
     return options;
   }
 }
+export class BraveScriptGroup extends ScriptGroups {
+  get name() {
+    return this.getName(ScriptGroupNames.BRAVE);
+  }
+
+  get options() {
+    return this.getOptions([
+      {
+        name: ScriptNames.BRAVE_FREE_GAMES,
+        value: ScriptKeys.BRAVE_FREE_GAMES,
+        description: ScriptDescriptions.BRAVE_FREE_GAMES,
+      },
+    ]);
+  }
+}
 
 export class FirefoxScriptGroup extends ScriptGroups {
   get name() {

@@ -1,10 +1,13 @@
 export class ScriptGroupNames {
+  static BRAVE = "Brave";
   static FIREFOX = "Firefox";
   static OBSIDIAN = "Obsidian";
 }
 
 export class ScriptNames {
-  static FIREFOX_FREE_GAMES = "Get free games";
+  static BROWSER_FREE_GAMES = "Get free games";
+  static BRAVE_FREE_GAMES = this.BROWSER_FREE_GAMES;
+  static FIREFOX_FREE_GAMES = this.BROWSER_FREE_GAMES;
   static OBSIDIAN_DAILY_NOTE = "Open daily note";
   static OBSIDIAN_WEEKLY_NOTE = "Open weekly note";
   static OBSIDIAN_ADD_GAME = "Tracker: Add game";
@@ -13,8 +16,10 @@ export class ScriptNames {
 }
 
 export class ScriptDescriptions {
-  static FIREFOX_FREE_GAMES =
+  static BROWSER_FREE_GAMES =
     "Open Epic Games' and Amazon Prime's free games sections";
+  static BRAVE_FREE_GAMES = this.BROWSER_FREE_GAMES;
+  static FIREFOX_FREE_GAMES = this.BROWSER_FREE_GAMES;
   static OBSIDIAN_DAILY_NOTE = "Open daily note";
   static OBSIDIAN_WEEKLY_NOTE = "Open weekly note";
   static OBSIDIAN_ADD_GAME = "Tracker: Add game";
@@ -23,6 +28,7 @@ export class ScriptDescriptions {
 }
 
 export class ScriptKeys {
+  static BRAVE_FREE_GAMES = "brave-free-games";
   static FIREFOX_FREE_GAMES = "firefox-free-games";
   static OBSIDIAN_DAILY_NOTE = "obsidian-daily-note";
   static OBSIDIAN_WEEKLY_NOTE = "obsidian-weekly-notes";

@@ -16,9 +16,12 @@ import {} from "./core/presentation/scripts-names-manager";
 import { Separator, select } from "@inquirer/prompts";
 import { printAsciiArt } from "./core/presentation/ascii-manager";
 import {
+  BraveScriptGroup,
   FirefoxScriptGroup,
   ObsidianScriptGroup,
 } from "./core/presentation/script-groups-manager";
+import runBraveEpicGames from "./modules/brave/scripts/epic-games";
+import runBravePrimeGaming from "./modules/brave/scripts/prime-gaming";
 
 export class ConsoleApplication {
   async run() {
@@ -36,12 +39,16 @@ export class ConsoleApplication {
   }
 
   private async showScriptGroups() {
+    const brave = new BraveScriptGroup();
     const firefox = new FirefoxScriptGroup();
     const obsidian = new ObsidianScriptGroup();
     return select({
       message: "Select the action",
       pageSize: 10,
       choices: [
+        brave.name,
+        ...brave.options,
+        new Separator(),
         firefox.name,
         ...firefox.options,
         new Separator(),
@@ -53,6 +60,10 @@ export class ConsoleApplication {
 
   private async runScript(answer: string) {
     switch (answer) {
+      case ScriptKeys.BRAVE_FREE_GAMES:
+        await runBraveEpicGames();
+        await runBravePrimeGaming();
+        break;
       case ScriptKeys.FIREFOX_FREE_GAMES:
         await runFirefoxEpicGames();
         await runFirefoxPrimeGaming();
