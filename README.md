@@ -1,7 +1,7 @@
 # morty-os-automation
 
 <div align="center">
-    <img alt="Morty's face, bored" src="src/assets/morty.png">
+    <img alt="Morty's face, bored" src="https://raw.githubusercontent.com/brenobattaglin/morty-os-automation/main/assets/morty.png">
 </div>
 
 Morty's here to help me on my daily routine by doing repetitive tasks I do everyday. Thanks Morty.
@@ -23,9 +23,9 @@ For example, if you want to execute your node script in e.g. iTerm2, you'd have 
 This project is really personal. But if you want to run everything properly, here it goes:
 
 1. Install node.js version >= 14
-2. Make sure you're logged in and has accesses to [these urls](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/url.ts) so the scripts can work properly.
-3. Make sure you have [these softwares](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/software-names.ts) installed.
-4. Install [these plugins and commands](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/constants/obsidian.ts) available on Obsidian and make sure they are working via the command pallete.
+2. Make sure you're logged in and has accesses to [these urls](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/core/constants/url.ts) so the scripts can work properly.
+3. Make sure you have [these softwares](https://github.com/brenobattaglin/morty-os-automation/blob/eb352128a306abed4097822993d7b6a7e90e50a7/src/core/constants/software-names.ts) installed.
+4. Install [these plugins and commands](https://github.com/brenobattaglin/morty-os-automation/blob/main/src/modules/obsidian/helpers/command-helper.ts) available on Obsidian and make sure they are working via the command pallete.
 
 ## Setup
 
