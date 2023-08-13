@@ -1,6 +1,6 @@
 import { sleep } from "@nut-tree/nut-js";
-import MacosUtils from "../../../core/utils/macos-utils";
-import KeyboardUtils from "../../../core/utils/keyboard-utils";
+import MacosUtils from "../../../components/utils/macos-utils";
+import KeyboardUtils from "../../../components/utils/keyboard-utils";
 import ObsidianCommandHelper, {
   ObsidianCommands,
 } from "../helpers/command-helper";

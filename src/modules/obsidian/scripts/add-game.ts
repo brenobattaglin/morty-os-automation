@@ -3,10 +3,10 @@ import { sleep } from "@nut-tree/nut-js";
 import cheerio from "cheerio";
 import fs from "fs-extra";
 import UrlConstants from "../../../core/constants/url";
-import BrowserUtils from "../../../core/utils/browser-utils";
-import { HtmlUtils } from "../../../core/utils/html-utils";
-import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import MacosUtils from "../../../core/utils/macos-utils";
+import BrowserUtils from "../../../components/utils/browser-utils";
+import { HtmlUtils } from "../../../components/utils/html-utils";
+import KeyboardUtils from "../../../components/utils/keyboard-utils";
+import MacosUtils from "../../../components/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 
 export default async function runObsidianAddGame() {

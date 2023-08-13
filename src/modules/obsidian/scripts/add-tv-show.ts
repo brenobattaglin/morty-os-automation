@@ -1,11 +1,11 @@
 import { keyboard, sleep } from "@nut-tree/nut-js";
 import { input } from "@inquirer/prompts";
-import KeyboardUtils from "../../../core/utils/keyboard-utils";
+import KeyboardUtils from "../../../components/utils/keyboard-utils";
 import ObsidianUtils, {
   ObsidianCommands,
   ObsidianCustomCommands,
 } from "../helpers/command-helper";
-import MacosUtils from "../../../core/utils/macos-utils";
+import MacosUtils from "../../../components/utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 
 export default async function runObsidianAddTvShow() {

@@ -1,9 +1,9 @@
 import { Key, keyboard, sleep } from "@nut-tree/nut-js";
-import MacosUtils from "../../../core/utils/macos-utils";
+import MacosUtils from "../../utils/macos-utils";
 import SoftwareNameConstants from "../../../core/constants/software-names";
 import UrlConstants from "../../../core/constants/url";
-import KeyboardUtils from "../../../core/utils/keyboard-utils";
-import BrowserUtils from "../../../core/utils/browser-utils";
+import KeyboardUtils from "../../utils/keyboard-utils";
+import BrowserUtils from "../../utils/browser-utils";
 
 export default async function runBrowserPrimeGaming(browserName: string) {
   await MacosUtils.openApplication(browserName);
